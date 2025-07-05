@@ -3,6 +3,8 @@ import type { AppProps } from "next/app";
 import { ApolloProvider } from "@apollo/client";
 import client from "@/graphql/apolloClient";
 import ErrorBoundary from "@/components/ErrorBoundary";
+import '../sentry.client.config'; 
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
